@@ -3,12 +3,30 @@
 # dependencies
 /node_modules
 package-lock.json
+package.json
 
 # testing
 /coverage
 
 # production
 /build
+
+# other
+.env
+.editorconfig
+.gitattributes
+.prettierignore
+.browserslistrc
+.eslintrc.js
+.prettierrc.js
+CHANGELOG.md
+ISSUE_TEMPLATE.md
+jsconfig.json
+LICENSE
+migration.md
+REACT.md
+README.md
+yarn.lock
 
 # misc
 .eslintcache

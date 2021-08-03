@@ -5,19 +5,7 @@ import React from 'react'
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
-const Accordion = React.lazy(() => import('./views/components/base/accordion/Accordion'))
-const Breadcrumbs = React.lazy(() => import('./views/components/base/breadcrumbs/Breadcrumbs'))
-const Cards = React.lazy(() => import('./views/components/base/cards/Cards'))
-const Carousels = React.lazy(() => import('./views/components/base/carousels/Carousels'))
-const Collapses = React.lazy(() => import('./views/components/base/collapses/Collapses'))
-const ListGroups = React.lazy(() => import('./views/components/base/list-groups/ListGroups'))
-const Navs = React.lazy(() => import('./views/components/base/navs/Navs'))
-const Paginations = React.lazy(() => import('./views/components/base/paginations/Paginations'))
-const Popovers = React.lazy(() => import('./views/components/base/popovers/Popovers'))
-const Progress = React.lazy(() => import('./views/components/base/progress/Progress'))
-const Spinners = React.lazy(() => import('./views/components/base/spinners/Spinners'))
-const Tables = React.lazy(() => import('./views/components/base/tables/Tables'))
-const Tooltips = React.lazy(() => import('./views/components/base/tooltips/Tooltips'))
+const AddBanner = React.lazy(() => import('./views/components/addbanner/AddBanner'))
 
 const Buttons = React.lazy(() => import('./views/components/buttons/buttons/Buttons'))
 const ButtonGroups = React.lazy(() =>
@@ -54,27 +42,16 @@ const Widgets = React.lazy(() => import('./views/components/widgets/Widgets'))
 
 const Charts = React.lazy(() => import('./views/components/charts/Charts'))
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
+const Banner = React.lazy(() => import('./views/pages/banner/index'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/banner', name: 'Banner', component: Banner },
+  { path: '/addBanner', name: 'AddBanner', component: AddBanner },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
-  { path: '/base', name: 'Base', component: Cards, exact: true },
-  { path: '/base/accordion', name: 'Accordion', component: Accordion },
-  { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
-  { path: '/base/cards', name: 'Cards', component: Cards },
-  { path: '/base/carousels', name: 'Carousel', component: Carousels },
-  { path: '/base/collapses', name: 'Collapse', component: Collapses },
-  { path: '/base/list-groups', name: 'List Groups', component: ListGroups },
-  { path: '/base/navs', name: 'Navs', component: Navs },
-  { path: '/base/paginations', name: 'Paginations', component: Paginations },
-  { path: '/base/popovers', name: 'Popovers', component: Popovers },
-  { path: '/base/progress', name: 'Progress', component: Progress },
-  { path: '/base/spinners', name: 'Spinners', component: Spinners },
-  { path: '/base/tables', name: 'Tables', component: Tables },
-  { path: '/base/tooltips', name: 'Tooltips', component: Tooltips },
   { path: '/buttons', name: 'Buttons', component: Buttons, exact: true },
   { path: '/buttons/buttons', name: 'Buttons', component: Buttons },
   { path: '/buttons/dropdowns', name: 'Dropdowns', component: Dropdowns },

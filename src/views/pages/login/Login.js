@@ -17,7 +17,7 @@ import CIcon from '@coreui/icons-react'
 
 const Login = () => {
   return (
-    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <div className="bg-dark min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md="8">
@@ -45,7 +45,7 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs="6">
-                        <CButton color="primary" className="px-4">
+                        <CButton color="warning" className="px-4">
                           Login
                         </CButton>
                       </CCol>
@@ -58,7 +58,7 @@ const Login = () => {
                   </CForm>
                 </CCardBody>
               </CCard>
-              <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
+              <CCard className="text-white bg-warning py-5" style={{ width: '44%' }}>
                 <CCardBody className="text-center">
                   <div>
                     <h2>Sign up</h2>
@@ -67,7 +67,7 @@ const Login = () => {
                       tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <Link to="/register">
-                      <CButton color="primary" className="mt-3" active tabIndex={-1}>
+                      <CButton color="dark" className="mt-3" active tabIndex={-1}>
                         Register Now!
                       </CButton>
                     </Link>

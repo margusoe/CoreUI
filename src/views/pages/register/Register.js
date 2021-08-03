@@ -15,7 +15,7 @@ import CIcon from '@coreui/icons-react'
 
 const Register = () => {
   return (
-    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <div className="bg-dark min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md="9" lg="7" xl="6">
@@ -54,7 +54,7 @@ const Register = () => {
                       autoComplete="new-password"
                     />
                   </CInputGroup>
-                  <CButton color="success" block>
+                  <CButton color="warning" block>
                     Create Account
                   </CButton>
                 </CForm>

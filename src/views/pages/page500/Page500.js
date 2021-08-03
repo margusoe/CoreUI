@@ -12,14 +12,14 @@ import CIcon from '@coreui/icons-react'
 
 const Page500 = () => {
   return (
-    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
+    <div className="bg-dark min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md="6">
-            <span className="clearfix">
+            <span className="clearfix text-white">
               <h1 className="float-start display-3 me-4">500</h1>
-              <h4 className="pt-3">Houston, we have a problem!</h4>
-              <p className="text-medium-emphasis float-start">
+              <h4 className="pt-3">Jet Edu has an internal maintenance!</h4>
+              <p className="text-white float-start">
                 The page you are looking for is temporarily unavailable.
               </p>
             </span>
@@ -28,7 +28,7 @@ const Page500 = () => {
                 <CIcon name="cil-magnifying-glass" />
               </CInputGroupText>
               <CFormControl size="16" type="text" placeholder="What are you looking for?" />
-              <CButton color="info">Search</CButton>
+              <CButton color="warning">Search</CButton>
             </CInputGroup>
           </CCol>
         </CRow>
